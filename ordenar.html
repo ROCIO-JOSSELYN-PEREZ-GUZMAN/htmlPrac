@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <title>PasteleriaBesoAngel</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>   
+ <body>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       a:hover{
+            font-size:x-large;
+            color:#af762c;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a{
+            font-size:x-large;
+            color:#af762c;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .boton-personalizado{
+            text-decoration: none;
+            text-align: left;
+             font-size: 20px;
+            color:rgb(68, 52, 18);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: rgba(221, 159, 193, 0.61);
+            border-radius: 25px;
+            cursor: pointer;
+            
+        }
+      body
+      {
+          background-image: url(fondo3.png);
+          background-size: 100vw 100vh;
+          background-attachment: fixed;
+          margin: 0;
+          padding: 50px;
+          color:#351d11;
+          text-align: center;
+          font-family:'Times New Roman', Times, serif
+        }
+        form{
+          width: 850px;
+          margin: auto;
+          background: rgba(201, 92, 152, 0.2);
+          padding: 10px 20px;
+          box-sizing: border-box;
+          margin-top: 20px;
+          border-radius: 10px;
+
+
+        }
+  
+      th,td{
+          padding: 15px;
+          text-align: left;
+      }
+      input,textarea, select{
+    border: none;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      border-radius: 7px;
+      
+      }
+      @media(max-width:850px){
+        form{
+          width: 100%;
+        }    
+      }       
+    </style>
+
+<header > 
+<div>
+    <a class="boton-personalizado"href="index.html">Inicio</a>&nbsp; &nbsp; 
+    <a class="boton-personalizado"href="Menú.html">Menú</a>&nbsp; &nbsp;
+    <a class="boton-personalizado"href="contacto.html">Contacto</a>&nbsp; &nbsp;
+          
+    <br><br><br>
+    
+      <form action="">
+     <a><h1>Crear pedido</h1></a> 
+    <br><br>
+    <label for="Input1">Nombre completo:</label>
+    <input type="text" id="nombre" name="Nombre completo">&nbsp; &nbsp;&nbsp; &nbsp;
+
+    <label for="Input1">Correo:</label>
+    <input type="text" id="correo" name="Correo"><br><br>
+
+    <label for="Input1">Telefono:</label>
+    <input type="text" id="telefono" name="Telefono"><br><br>
+
+     <label for="Input1">Tematica del evento:</label>
+    <input type="text" id="evento" name="Tematica del evento"><br><br>
+    
+    <p>Fecha y hora del evento</p>
+    <input type="date" id="fecha1" name="fecha1">
+    <input type="time" id="fecha4" name="fecha4"><br><br>
+
+    <p>Tamaño del pastel</p><br>
+    <input type="radio" id="chico" name="tamaño" value="Chico">
+    <label for="chico">Chico</label><br>
+    <input type="radio" id="mediano" name="tamaño" value="Mediano">
+    <label for="mediano">Mediano</label><br>
+    <input type="radio" id="grande" name="tamaño" value="Grande">
+    <label for="grande">Grande</label><br>
+    <input type="radio" id="extra" name="tamaño" value="Extra">
+    <label for="extra">Extra grande</label><br><br>
+    
+    <label for="pastel">Opcion del pastel</label>
+    <select id="tacos" name="tacos">
+        <option value="color">El mundo del color.</option>
+        <option value="velada">Una velada de amor.</option>
+        <option value="castillo">Castillo rosado.</option>
+        <option value="delicado">Un toque delicado.</option>
+        <option value="rocoso">El mundo rocoso.</option>
+        <option value="reflejo">El reflejo del alma.</option>
+        <option value="azul">El cielo azul.</option>
+        <option value="buho"> La casa del Búho.</option>
+        <option value="tropical">La casa tropical.</option>
+        <option value="beso">El beso de angel.</option>
+    </select>
+    <br><br>
+   
+    <p>Sabor a elegir:</p><br>
+    <input type="checkbox" id="sabor1" name="sabor1" value="chocolate">
+    <label for="sabor1">Chocolate</label><br>
+
+    <input type="checkbox" id="sabor2" name="sabor2" value="red velvet">
+    <label for="sabor2">Red velvet</label><br>
+    
+    <input type="checkbox" id="sabor3" name="sabor3" value="vainilla">
+    <label for="sabor3">Vainilla</label><br>
+
+    <input type="checkbox" id="sabor4" name="sabor4" value="zanahoria">
+    <label for="sabor4">Zanahoria</label><br>
+    <br><br>
+    <input type="button"value="Crear pedido" id="boton"class="boton-personalizado" onclick="alert('Su pedido a sido creado exitosamente');">
+    
+
+     </form>
+    </div>
+    </header>
+    </body>
+    </html>
